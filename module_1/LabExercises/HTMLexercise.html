@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML Exercise</title>
+    <link rel="stylesheet" href="cssdemo.css" />
+  </head>
+  <body>
+    <header><h1>This is an H1 title</h1></header>
+    <section>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <article>
+        <h2>Article Heading</h2>
+        <p>Text goes here</p>
+      </article>
+      <aside id="aside">
+        <h3>Aside Heading</h3>
+        <p>Text goes here</p>
+      </aside>
+    </section>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday, 24 March</td>
+          <td>Practice Software Engineering</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Let's create an HTML form</h3>
+
+    <form action="/action_page">
+      <div>
+        <label for="fname"><b>First name:</b></label>
+        <input type="text" id="fname" name="fname" />
+        <p></p>
+      </div>
+      <div>
+        <label for="lname"><b>Last name:</b></label>
+        <input type="text" id="lname" name="lname" />
+      </div>
+    </form>
+    <p id="XXX"></p>
+    <button onclick="YYY()">Click me</button>
+    <script>
+      function YYY() {
+        alert('This is an alert message!');
+        document.getElementById('XXX').textContent =
+          'this is the message to display';
+      }
+    </script>
+    <p id="practice"></p>
+    <button onclick="practice()">Practice</button>
+    <script>
+      function practice() {
+        document.getElementById('practice').textContent =
+          'This is a practice message';
+      }
+    </script>
+
+    <script>
+      document.getElementById('header').innerText = 'This is a new header';
+      document.getElementById('aside').innerText = 'This is a new aside';
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+body {
+  background-color: mintcream;
+  color: darkslategray;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+h1 {
+  color: darkolivegreen;
+  text-align: center;
+}
+h2 {
+  color: darkslategray;
+  text-align: center;
+}
+h3 {
+  color: dimgray;
+  text-align: center;
+  text-transform: uppercase;
+}
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 80%;
+  padding: 20px;
+}

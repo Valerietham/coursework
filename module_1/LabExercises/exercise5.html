@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lab Exercise 5</title>
+  </head>
+  <body>
+    <div id="result"></div>
+    <script>
+      let colour = ['Green', 'Red', 'Blue', 'Yellow', 'Purple'];
+      colour[0] = 'Orange'; // Change Green to Orange
+      colour[3] = 'Pink'; // Change Yellow to Pink
+      colour.unshift('Black'); // Add Black to the beginning
+      colour.pop(); // Remove Purple at the end
+      console.log(colour);
+
+      document.getElementById('result').textContent =
+        'Updated Colours: ' + colour.join(', '); // ChatGPT taught me the last line
+    </script>
+  </body>
+</html>
