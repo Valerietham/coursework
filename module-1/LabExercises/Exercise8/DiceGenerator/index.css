@@ -1,0 +1,47 @@
+body {
+  font-family: quantico, sans-serif; /* Use the Quantico font for the body */
+  font-weight: 400;
+  font-style: normal;
+  background-color: hsl(228, 58%, 8%);
+  color: aliceblue;
+  align-content: center;
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Bungee Shade', sans-serif; /* Use the Bungee Shade font for the heading */
+  font-weight: 400;
+  font-style: normal;
+  color: aliceblue;
+}
+
+.bungee-shade-regular {
+  font-family: 'Bungee Shade', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.quantico-regular {
+  font-family: 'Quantico', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.quantico-bold {
+  font-family: 'Quantico', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.quantico-regular-italic {
+  font-family: 'Quantico', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.quantico-bold-italic {
+  font-family: 'Quantico', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
