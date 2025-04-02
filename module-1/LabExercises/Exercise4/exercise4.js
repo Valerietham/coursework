@@ -20,7 +20,6 @@ function divide(a, b) {
   return a / b;
 }
 
-console.log(sum(8, 2));
 console.log('Sum:', sum(8, 4));
 console.log('Subtract:', subtract(8, 13));
 console.log('Multiply:', multiply(4, 7));

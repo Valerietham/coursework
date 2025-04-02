@@ -1,0 +1,38 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+.container {
+  display: flex;
+  min-height: 100vh;
+  align-items: stretch;
+}
+.column {
+  background: goldenrod;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+button {
+  background: purple;
+  color: white;
+  border: none;
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 12px;
+}
+
+#icon1 {
+  width: 150px;
+  height: auto;
+}
+
+#icon2 {
+  width: 150px;
+  height: auto;
+}

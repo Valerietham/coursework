@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div>
+      <h1>Product List</h1>
+      <!-- Filter Dropdown -->
+      <div>
+        <label for="stock-filter">Filter by Stock:</label>
+        <select id="stock-filter">
+          <option value="all">All</option>
+          <option value="in">In Stock</option>
+          <option value="out">Out of Stock</option>
+        </select>
+      </div>
+      <!-- Product Table -->
+      <table id="product-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>In Stock</th>
+          </tr>
+        </thead>
+        <br />
+        <tbody id="product-list">
+          <!-- Product rows will be inserted here -->
+          <button type="button" onclick="myFunction()">Add Products</button>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

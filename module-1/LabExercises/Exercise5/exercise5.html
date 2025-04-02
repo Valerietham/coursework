@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lab Exercise 5</title>
+  </head>
+  <body>
+    <h1>Lab Exercise 5</h1>
+    <div id="result"></div>
+    <script>
+      let colour = ['Green', 'Red', 'Blue', 'Yellow', 'Purple']; // 1. Create an array of 5 elements
+      colour[0] = 'Orange'; // 2. Replace the value of the element at position 1. Green -> Orange
+      colour[3] = 'Pink'; //  3. Replace the value of the element at position 4. Yellow -> Pink
+      colour.unshift('Black'); // 4. Add a new element to the beginning
+      colour.pop(); // 5. Remove the element at the end
+      console.log(colour); // 6. Log the array to the console
+
+      document.getElementById('result').textContent =
+        'Updated Colours: ' + colour.join(', '); // Display the updated array in the HTML
+    </script>
+  </body>
+</html>
