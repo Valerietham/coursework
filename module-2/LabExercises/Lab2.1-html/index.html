@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Lab Exercise 2.1 HTML" />
+    <meta name="keywords" content="HTML, Lab, Exercise" />
+    <meta name="author" content="Valerie Tham" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Lab Exercise 2.1 HTML</title>
+    <!-- IV.4 Add basic table styling -->
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <!-- works like <a href="/index.html">Home</a> -->
+        <!-- VII. Add link from Home to Form page -->
+        <a href="/index.html">Home</a>
+        <a href="form.html">Form</a>
+        <div>
+          <a href="/about.html">About</a>
+        </div>
+        <div>
+          <a href="/contact.html">Contact</a>
+        </div>
+        <div>
+          <a href="/products.html">Products</a>
+        </div>
+        <span>
+          <a href="/cakes.html">Cakes</a>
+        </span>
+        <span>
+          <a href="/blog.html">Blog</a>
+        </span>
+        <span>
+          <a href="/form.html">FAQ</a>
+        </span>
+      </nav>
+    </header>
+
+    <main>
+      <!-- 9. Add page headline -->
+      <h1>Recipes</h1>
+      <!-- 7. Add article tag -->
+      <article>
+        <!-- 8. Add article headline -->
+        <h2>Chocolate Chip Cookies</h2>
+        <p>
+          This is a simple recipe for chocolate chip cookies. It is easy to
+          follow and requires only a few ingredients.
+        </p>
+        <p>p represents paragraph without preserving spacing</p>
+        <pre>
+        Text in         a pre element
+        is displayed in a fixed-width
+        font, and it preserves
+        both      spaces and
+        line breaks
+        </pre>
+        <!-- 4. Add an unordered list of 4 items to your page using ul and li tags.-->
+        <h3>Ingredients</h3>
+        <ul>
+          <li>1 cup white sugar</li>
+          <li>½ cup unsalted butter</li>
+          <li>2 large eggs</li>
+          <li>2 teaspoons vanilla extract</li>
+          <li>1 ½ cups all-purpose flour</li>
+          <li>1 ¾ teaspoons baking powder</li>
+          <li>½ cup milk</li>
+          <li>Optional:</li>
+          <!-- 6. Add nested list -->
+          <ul>
+            <li>1/2 cup of chocolate chips</li>
+            <li>1 pinch salt</li>
+          </ul>
+        </ul>
+        <!-- 5. Add an ordered list of 4 items to your page using ol and li tags.-->
+        <h3>Instructions</h3>
+        <ol>
+          <li>Preheat oven to 350 degrees F (175 degrees C).</li>
+          <li>Grease and flour a 9x9 inch pan.</li>
+          <li>In a medium bowl, cream together the sugar and butter.</li>
+          <li>Beat in the eggs, one at a time, then stir in the vanilla.</li>
+          <li>
+            Combine flour and baking powder, add to the creamed mixture and mix
+            well.
+          </li>
+          <li>Finally stir in the milk until batter is smooth.</li>
+          <li>Pour or spoon batter into the prepared pan.</li>
+          <li>Bake for 30 to 40 minutes in the preheated oven.</li>
+        </ol>
+      </article>
+      <article>
+        <!-- IV.1 Add another article below the first one, with a unique h2 tag -->
+        <h2>Red Velvet Cupcakes</h2>
+        <!-- IV.2 Search the web for ‘HTML table’ and copy code you can find -->
+        <table>
+          <thead>
+            <tr>
+              <th>First header</th>
+              <!-- IV.7 add colspan="2" to the third header -->
+              <th colspan="2">Second header</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>First cell - first row</td>
+              <td>Second cell - first row</td>
+              <!-- IV.5 Add a third cell inside one of the rows.-->
+              <td>Third cell - first row</td>
+            </tr>
+            <!-- IV.3 Create another row by copying a tr tag, together with its children -->
+            <tr>
+              <td>First cell - second row</td>
+              <td>Second cell - second row</td>
+              <!-- IV.6 add the missing td tag on the other row/s-->
+              <td rowspan="2">Third cell - second row</td>
+            </tr>
+            <!-- IV.8 Add a third row -->
+            <tr>
+              <td>First cell - third row</td>
+              <td>Second cell - third row</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+      <!-- V.1 Add a new article -->
+      <article>
+        <h2>Adding media files</h2>
+        <!-- V.2 Add an image to your website -->
+        <img
+          src="https://picsum.photos/400/400"
+          alt="Chocolate Cake"
+          width="180"
+          height="300"
+        />
+        <!-- V.3 Add a second image using the html_lab_image.jpg file -->
+        <img src="assets/html_lab_image.jpg" alt="Scenic background" />
+        <div>
+          <!-- V.4 Add a video to your website -->
+          <!-- V.6 removing controls to autoplay-->
+          <video autoplay width="250">
+            <source src="assets/flower.webm" type="video/webm" />
+            Sorry, your browser doesn't support embedded videos.
+          </video>
+        </div>
+        <div>
+          <!-- V.5 Add an audio file to your website + caption using figcaption-->
+          <figure>
+            <audio controls src="assets/t-rex-roar.mp3">
+              Your browser does not support the <code>audio</code> element.
+            </audio>
+            <figcaption>This is a caption for the audio clip.</figcaption>
+          </figure>
+        </div>
+      </article>
+    </main>
+
+    <footer>Copyright &copy; 2024</footer>
+  </body>
+</html>

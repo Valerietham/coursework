@@ -1,0 +1,27 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "first-name": "Valerie",
+    "last-name": "Exercise 1",
+    "fav_language": "JavaScript",
+    "module": [
+      "module1",
+      "module2",
+      "module3"
+    ],
+    "country": "Tesla"
+  }
+}

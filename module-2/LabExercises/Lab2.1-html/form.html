@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+
+  <body>
+    <header>
+      <nav>
+        <!-- works like <a href="/index.html">Home</a> -->
+        <!-- VII. Add link from Home to Form page -->
+        <a href="/index.html">Home</a>
+        <a href="/form.html">Form</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- VI.1 add a form -->
+      <form method="POST" action="http://localhost:3000/profile">
+        <!-- VI.2 add 2 text input -->
+        <div>
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" name="first-name" required /><br />
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" name="last-name" required />
+        </div>
+        <!-- VI.3 add a radio button -->
+        <div>
+          <p>Choose your favourite programming language:</p>
+          <input type="radio" id="html" name="fav_language" value="HTML" />
+          <label for="html">HTML</label><br />
+          <input type="radio" id="css" name="fav_language" value="CSS" />
+          <label for="css">CSS</label><br />
+          <input
+            type="radio"
+            id="javascript"
+            name="fav_language"
+            value="JavaScript"
+          />
+          <label for="javascript">JavaScript</label><br />
+        </div>
+        <!-- VI.4 add a checkbox -->
+        <div>
+          <p>Select completed modules:</p>
+          <input type="checkbox" id="module1" name="module" value="module1" />
+          <label for="module1">Module 1</label><br />
+          <input type="checkbox" id="module2" name="module" value="module2" />
+          <label for="module2">Module 2</label><br />
+          <input type="checkbox" id="module3" name="module" value="module3" />
+          <label for="module3">Module 3</label><br />
+        </div>
+        <!-- VI.5 add a dropdown using select & option tag-->
+        <div>
+          <label for="country">Brand of car owned:</label>
+          <select id="country" name="country">
+            <option value="Toyata">Toyota</option>
+            <option value="Honda">Honda</option>
+            <option value="BMW">BMW</option>
+            <option value="Tesla">Tesla</option>
+          </select>
+        </div>
+        <!-- Add a submit button-->
+        <div>
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </main>
+
+    <footer>Copyright &copy; 2024</footer>
+  </body>
+</html>

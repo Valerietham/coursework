@@ -1,0 +1,124 @@
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: purple;
+}
+
+.background-1 {
+  background: #68b0ab;
+}
+
+.background-2 {
+  background: #8fc0a9;
+}
+
+.background-3 {
+  background: #c8d5b9;
+}
+
+.background-4 {
+  background: #faf3dd;
+}
+
+.m-20 {
+  margin: 20px;
+}
+
+.h-80 {
+  min-height: 80px;
+}
+
+.h-400 {
+  height: 400px;
+}
+
+.w-80 {
+  width: 80px;
+}
+
+/* 2. basic flexbox */
+
+.flex-container {
+  display: flex;
+}
+
+.flex-item-1 {
+  flex: 1;
+}
+
+.flex-item-2 {
+  flex: 1;
+}
+
+.flex-item-3 {
+  flex: 2;
+}
+
+.flex-item-4 {
+  flex: 4;
+}
+
+/* flex <number> defines the proportion of available space that each item will take e.g. 1/8 of the space */
+
+/* 3. Centering flex items */
+
+.flex-container {
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; /* 6. Changing Direction - row-reverse: items will be displayed in reverse order */
+}
+
+/* 4. Assigning leftover space */
+
+.flex-space-between {
+  justify-content: space-between;
+}
+
+/* 5. Wrapping items  */
+
+.flex-basis-item-50 {
+  flex-basis: 25%;
+}
+
+.flex-wrap {
+  flex-wrap: wrap-reverse; /* wrap-reverse: items will wrap to the next line in reverse order */
+}
+
+/* 7. Flexbox for horizontal navigation */
+
+/* .flex-menu > li a {
+  background-color: #c8d5b9;
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  outline: #68b0ab solid 1px;
+  list-style: none;
+  justify-content: left;
+} */
+
+.flex-menu {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none; /* removes bullets from the whole list */
+}
+
+.flex-menu > li a {
+  display: block; /* so padding applies properly */
+  background-color: #c8d5b9;
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  outline: #68b0ab solid 1px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.fourth-item {
+  order: 4; /* change FAQ to the end of the order */
+}

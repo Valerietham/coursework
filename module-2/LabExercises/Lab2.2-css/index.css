@@ -1,0 +1,148 @@
+/* I. Selectors */
+/* Put styles for questions 1.1, 1.2, 1.3 and 1.4 here */
+article {
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 0.5rem;
+  background-color: rgb(223, 223, 223);
+  color: rgb(50, 46, 46);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.style-me1 {
+  color: red;
+}
+
+#style-me2 {
+  color: blue;
+}
+
+.style-me1#style-me2 {
+  color: purple;
+}
+
+/* Put styles for questions 2.1 and 2.2 here */
+
+.my-descendants-are-styled p {
+  background: red;
+}
+
+.my-children-are-styled > p {
+  background: green;
+}
+
+/* II. Box model and common properties */
+/* Put styles for questions 1-8 here */
+
+.box {
+  background: black;
+  color: white;
+  margin: 24px 12px 18px 36px;
+  padding: 16px 24px;
+  width: auto;
+  height: 40vh !important;
+  border: 10px solid white;
+  box-sizing: border-box; /* allows us to include the padding and border in an element's total width and height. */
+  overflow: scroll; /* hides any content that overflows the element's box. Options: visible/hidden/ scroll/auto */
+  outline: 10px solid rgb(71, 120, 175); /* outline is not part of the box model, it does not affect the element's size or position. */
+  border-radius: 50%; /* border-radius: 50% makes the box a circle. */
+  border-radius: 2em; /* border-radius: 50% makes the box a circle. */
+  background-image: url('./assets/images/img1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* III. Positioning */
+/* Put styles for questions 1-3 here */
+
+.position-absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: aqua;
+}
+
+/* When an element is positioned outside a relatively positioned container, 
+its position is based on the entire page rather than the container. */
+
+.position-relative {
+  position: relative;
+  top: 0;
+  background-color: lightgreen;
+}
+
+/* A sticky element scrolls with the page until it reaches a specified threshold, 
+then it “sticks” to the top of the viewport and remains fixed in place. */
+
+.position-sticky {
+  position: sticky;
+  top: 0;
+  background-color: blueviolet;
+}
+
+/* IV. Styling text */
+/* Put styles for questions 1-10 here */
+
+.text-style {
+  color: olive;
+  font-size: x-large;
+  line-height: 1.2rem; /* line-height: 1.2rem; sets the line height to 1.2 times the font size. */
+  font-weight: 900;
+  font-family: 'Special Gothic', sans-serif;
+  text-align: right;
+  letter-spacing: 2px;
+  word-spacing: 8px;
+  text-transform: uppercase; /* text-transform: uppercase; makes all letters uppercase. */
+  text-decoration: underline; /* text-decoration: underline; underlines the text. */
+}
+
+.special-gothic-regular {
+  font-family: 'Special Gothic', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* V. Styling links */
+/* Put styles for questions 1-3 here */
+
+a,
+a:link {
+  color: rgb(30, 136, 46);
+  font-size: smaller;
+  font-weight: 900;
+  text-decoration: none; /* text-decoration: none; removes the underline from the link. */
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: rgb(24, 75, 31);
+  text-decoration: underline; /* text-decoration: underline; underlines the link when hovered. */
+}
+
+a:visited {
+  color: rgb(44, 75, 31);
+  font-style: italic; /* font-style: italic; makes the text italic. */
+}
+
+/* VI. calc() */
+/* Put styles for questions 1-3 here */
+
+.calc-style {
+  width: calc(100vw - 100px);
+  background-color: royalblue;
+  display: flex;
+}
+
+.fixed-width-col {
+  width: 350px; /* fixed width of 200px */
+  display: inline-block; /* allows the element to be inline with other elements */
+  background-color: rgb(24, 75, 31);
+}
+
+.fluid-col {
+  display: inline-block; /* allows the element to be inline with other elements */
+  background-color: rgb(30, 136, 46);
+  width: calc(100% - 550px);
+}
