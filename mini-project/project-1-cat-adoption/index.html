@@ -1,0 +1,168 @@
+<!-- Add mobile responsiveness -->
+
+<!DOCTYPE html>
+<html lang="en" data-theme="luxury">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kitty Welfare Society</title>
+    <!-- JavaScript -->
+    <script type="module" src="index.js"></script>
+    <!-- Stylesheet via FlyonUI with Tailwind CSS -->
+    <link href="dist/output.css" rel="stylesheet" />
+    <!-- Google Font API -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/icon.png" />
+  </head>
+  <body>
+    <!-- Start of navigation bar -->
+    <header>
+      <nav
+        class="navbar rounded-box shadow-base-300/20 shadow-sm fixed top-0 z-50 bg-white"
+      >
+        <div class="navbar-start">
+          <a
+            class="link text-base-content link-neutral text-xl font-bold no-underline flex items-center gap-2"
+            href="index.html"
+          >
+            <img src="images/icon.png" alt="Icon" class="w-8 h-8" />
+            Kitty Welfare Society
+          </a>
+        </div>
+        <div class="navbar-center max-md:hidden">
+          <ul class="menu menu-horizontal gap-2 p-0 text-base rtl:ml-20">
+            <li><a href="pages/about.html">About Us</a></li>
+            <li><a href="pages/faq.html">Adoption FAQ</a></li>
+            <li><a href="pages/donate.html">Donate</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn btn-primary" href="pages/adopt.html">Adopt a kitty</a>
+        </div>
+      </nav>
+    </header>
+    <!-- End of navigation bar -->
+    <!-- Auto-Play Carousel Banner -->
+    <div
+      id="auto-play"
+      data-carousel='{ "loadingClasses": "opacity-0", "isAutoPlay": true, "speed": 7000 }'
+      class="relative w-full h-screen"
+    >
+      <div class="carousel h-screen">
+        <div class="carousel-body opacity-100 h-full">
+          <!-- Overlay with z-0 positioning -->
+          <div class="absolute inset-0 bg-black/40 z-0"></div>
+          <!-- Slide 1 -->
+          <div class="carousel-slide">
+            <div
+              class="flex h-full justify-left pl-40 items-center bg-cover bg-center text-white px-6"
+              style="
+                background-image: url('https://mustsharenews.com/wp-content/uploads/2020/04/singapore-2-6.jpg');
+              "
+            >
+              <!-- Slide 1 Container -->
+              <div class="text-left max-w-xl p-6 z-10">
+                <h2 class="text-3xl sm:text-5xl font-bold mb-4">
+                  Over 1,500 cats are abandoned in Singapore every year
+                </h2>
+                <p class="text-lg sm:text-xl mb-6">
+                  The reported numbers only tell half the story. Countless more
+                  are silently left in public spaces, their stories untold.
+                </p>
+                <a href="pages/adopt.html" class="btn btn-lg">
+                  Change Their Story
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-slide">
+            <div
+              class="flex h-full justify-left pl-40 items-center bg-cover bg-center text-white px-6"
+              style="
+                background-image: url('https://static01.nyt.com/images/2024/10/30/multimedia/00xp-cats-promo/00xp-cats-grid-02-kgzf-videoSixteenByNine3000.jpg');
+              "
+            >
+              <!-- Slide 2 Container -->
+              <div class="text-left max-w-xl p-6 z-10">
+                <h2 class="text-3xl sm:text-5xl font-bold mb-4">
+                  Your Support Feeds, Shelters, and Heals Abandoned Cats
+                </h2>
+                <p class="text-lg sm:text-xl mb-6">
+                  Every dollar helps provide food, medical care, and safe spaces
+                  for Singapore's forgotten felines until they find their
+                  furrever homes.
+                </p>
+                <a href="pages/donate.html" class="btn btn-lg">
+                  Donate Today
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-slide">
+            <div
+              class="flex h-full justify-left pl-40 items-center bg-cover bg-center text-white px-6"
+              style="
+                background-image: url('https://static01.nyt.com/images/2024/10/30/multimedia/00xp-cats-06-gfzm/00xp-cats-06-gfzm-superJumbo.jpg?quality=75&auto=webp');
+              "
+            >
+              <!-- Slide 3 contents -->
+              <div class="text-left max-w-xl p-6 z-10">
+                <h2 class="text-3xl sm:text-5xl font-bold mb-4">
+                  25 Years of Changing Feline Lives
+                </h2>
+                <p class="text-lg sm:text-xl mb-6">
+                  Learn how Cat Welfare Society is addressing the root causes of
+                  abandonment while saving lives daily.
+                </p>
+                <a href="pages/about.html" class="btn btn-lg">
+                  Read Our Rescue Mission
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Previous Slide -->
+      <button
+        type="button"
+        class="carousel-prev absolute left-4 top-1/2 transform -translate-y-1/2 z-10"
+      >
+        <span
+          class="size-9.5 bg-white/80 flex items-center justify-center rounded-full shadow-md"
+        >
+          <span
+            class="icon-[tabler--chevron-left] size-5 cursor-pointer rtl:rotate-180"
+          ></span>
+        </span>
+        <span class="sr-only">Previous</span>
+      </button>
+
+      <!-- Next Slide -->
+      <button
+        type="button"
+        class="carousel-next absolute right-4 top-1/2 transform -translate-y-1/2 z-10"
+      >
+        <span class="sr-only">Next</span>
+        <span
+          class="size-9.5 bg-white/80 flex items-center justify-center rounded-full shadow-md"
+        >
+          <span
+            class="icon-[tabler--chevron-right] size-5 cursor-pointer rtl:rotate-180"
+          ></span>
+        </span>
+      </button>
+    </div>
+    <!-- JavaScript for using FlyonUI -->
+    <script src="node_modules/flyonui/flyonui.js"></script>
+  </body>
+</html>
