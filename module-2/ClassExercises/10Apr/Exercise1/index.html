@@ -1,0 +1,135 @@
+<!-- Create a responsive profile card using Bootstrap 
+
+Card component (https://getbootstrap.com/docs/5.3/components/card/)
+
+It should have
+
+1. Profile Image (use any placeholder)
+2.Name
+3.Short Bio
+4.Buttons: "Follow" and "Message" -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cat Breeds</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>Cats breeds of the world</h1>
+    <div class="card" style="width: 500px">
+      <img
+        src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?ixlib=rb-4.0.3&crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400"
+        class="card-img-top"
+        alt="picture of american curl cat"
+      />
+      <div class="card-body">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Profile</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        <h5 class="card-title">Americal Curl</h5>
+        <p class="card-text">The American Curl is a cat characterised by its unusual ears,
+            which curl back from the face toward the center of the back of
+            the skull. The breed originated in Lakewood, California, due to
+            a spontaneous mutation.</p>
+        <!-- Add a Collapsible “About” Section
+Use Bootstrap’s Collapse component to show/hide more details about the user (e.g., bio, skills, hobbies).
+https://getbootstrap.com/docs/5.3/components/collapse/
+Add a “More Info” button.
+When clicked, it expands/collapses a hidden section.-->
+
+        <p class="d-inline-flex gap-1">
+          <a
+            class="btn btn-primary"
+            data-bs-toggle="collapse"
+            href="#multiCollapseExample1"
+            role="button"
+            aria-expanded="false"
+            aria-controls="multiCollapseExample1"
+            >skills</a
+          >
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#multiCollapseExample2"
+            aria-expanded="false"
+            aria-controls="multiCollapseExample2"
+          >
+            hobbies
+          </button>
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target=".multi-collapse"
+            aria-expanded="false"
+            aria-controls="multiCollapseExample1 multiCollapseExample2"
+          >
+            meoww
+          </button>
+        </p>
+        <div class="row">
+          <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample1">
+              <div class="card card-body">
+                🎯 Aim Master <br>
+
+                🕵️‍♀️ Top Detective <br>
+                
+                🎨 Interior Decorator <br>
+                
+                🧼 Self-Cleaning Pro <br>
+                
+                🧸 People Whisperer <br>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample2">
+              <div class="card card-body">
+                🧗‍♂️ Climbing Adventures<br>
+                🧶 Yarn Time<br>
+                📦 Box Living<br>
+                🛋️ Super Lounging<br>
+                💬 Chirpy Chats<br>
+                </pre>
+              </div>
+            </div>
+          </div>
+          
+         
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

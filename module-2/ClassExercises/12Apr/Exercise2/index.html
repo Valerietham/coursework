@@ -1,0 +1,57 @@
+<!-- 
+* On hover:
+- Background color changes
+- Shadow appears
+- Smooth animation
+Custom CSS to add simple hover effects:
+Change background color
+Add shadow
+Smooth transition
+Things to do
+transition
+box-shadow
+transform -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap Profile Card</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container py-5">
+      <!-- Profile Card -->
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?ixlib=rb-4.0.3&crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400"
+          class="card-img-top img-fluid rounded-circle mx-auto mt-4"
+          style="width: 150px; height: 150px; object-fit: cover"
+          alt="Profile Photo"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Meow Mi 🐾</h5>
+          <p class="card-text">
+            Characterised by its unusual ears, which curl back from the face
+            toward the center of the back of the skull.
+          </p>
+          <a href="#" class="btn btn-primary">Follow</a>
+          <a href="#" class="btn btn-primary">Message</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

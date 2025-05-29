@@ -1,0 +1,101 @@
+<!-- Create a product card that:
+Shows product image, name, price, and description
+On small screen → content stacks vertically
+Use Bootstrap grid system (row, col-12, col-md-6)
+Use card component
+Here is the product details
+const products = [
+    {
+      name: "Nike Running Shoes",
+      price: "$99.99",
+      description: "Comfortable and stylish running shoes suitable for everyday use.",
+      image: "https://via.placeholder.com/400x300"
+    },
+    {
+      name: "Adidas Hoodie",
+      price: "$59.99",
+      description: "Warm, soft and perfect for cool weather.",
+      image: "https://via.placeholder.com/400x300"
+    },
+    {
+      name: "Puma Backpack",
+      price: "$39.99",
+      description: "Lightweight and durable backpack for daily use.",
+      image: "https://via.placeholder.com/400x300"
+    }
+  ];-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="container text-center">
+      <div class="row">
+        <!-- Coloumn 1-->
+        <div class="col-12 col-md-4">
+          <div class="card" style="width: auto">
+            <img
+              src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRrl4Ye68mrUWpNdU9uRV9NP8c11ivnCKVNgX2JaHL7WlHnyeIrfZx4AQG8YA3TR_TyEm7yXYqsBgikI7LQc-EsNDjAFILGQB2eiKJo2pRVxSuSuJmBqxLDV0xrq-Y57ATvMTM-SK4E&usqp=CAc"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Nike Running Shoes</h5>
+              <p class="card-text">
+                Comfortable and stylish running shoes suitable for everyday use.
+              </p>
+              <p class="card-text">Price: $99.99</p>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- Coloumn 2-->
+        <div class="col-12 col-md-4">
+          <div class="card" style="width: auto">
+            <img
+              src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/da7e675dc8ad4ecc96da1c979e4794f7_9366/Future_Icons_3-Stripes_Hoodie_Black_JD4838_21_model.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Adidas Hoodie</h5>
+              <p class="card-text">Warm, soft and perfect for cool weather.</p>
+              <p class="card-text">Price: $59.99</p>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- Coloumn 3-->
+        <div class="col-12 col-md-4">
+          <div class="card" style="width: auto">
+            <img
+              src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1000,h_1000/global/079467/01/fnd/SEA/fmt/png/Core-Base-Backpack"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Puma Backpack</h5>
+              <p class="card-text">
+                Lightweight and durable backpack for daily use.
+              </p>
+              <p class="card-text">Price: $39.99</p>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
