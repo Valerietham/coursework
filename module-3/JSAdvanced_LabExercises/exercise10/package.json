@@ -1,0 +1,15 @@
+{
+  "name": "exercise10",
+  "version": "1.0.0",
+  "main": "index10.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  },
+  "type": "module"
+}
