@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lab Exercise 3: Template</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- exercise 1 & 2 -->
+    <h1>Lab Exercise 3: Template</h1>
+    <h2>
+      Exercise 1 & 2: Modify the addCard function so that you can pass content
+      for the card dynamically. Call addCard repeatedly so that your cards are
+      automatically generated based on data from an array.
+    </h2>
+    <template id="card-template">
+      <div class="card">
+        <div class="card-body">
+          <div class="card-title"></div>
+          <div class="card-text"></div>
+        </div>
+      </div>
+    </template>
+    <div id="card-list"></div>
+
+    <!-- exercise 3 -->
+    <h2>
+      Exercise 3: Populate the page dynamically, by generating an artist profile
+      card which includes cards representing the items in an artist's portfolio.
+    </h2>
+    <!-- Template for Artist -->
+    <template id="artist-template">
+      <div class="artist-card">
+        <h1 class="artist-name"></h1>
+        <div class="portfolio"></div>
+      </div>
+    </template>
+
+    <template id="artwork-template">
+      <div class="artwork-card">
+        <img class="artwork-image" />
+        <h3 class="artwork-title"></h3>
+      </div>
+    </template>
+
+    <div id="artist-section"></div>
+    <script src="index.js"></script>
+  </body>
+</html>

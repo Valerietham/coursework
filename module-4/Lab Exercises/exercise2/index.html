@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="calculator-body">
+    <div class="calculator-container">
+      <!-- Display -->
+      <div class="calculator-display-container">
+        <div id="display" class="calculator-display">0</div>
+      </div>
+
+      <!-- Buttons Grid -->
+      <div class="grid grid-cols-4 gap-4">
+        <!-- Row 1 -->
+        <button id="clear" class="calculator-btn clear-btn col-span-3">
+          Clear
+        </button>
+        <button class="calculator-btn operation-btn" data-operation="divide">
+          ÷
+        </button>
+
+        <!-- Row 2 -->
+        <button class="calculator-btn number-btn" data-number="7">7</button>
+        <button class="calculator-btn number-btn" data-number="8">8</button>
+        <button class="calculator-btn number-btn" data-number="9">9</button>
+        <button class="calculator-btn operation-btn" data-operation="multiply">
+          ×
+        </button>
+
+        <!-- Row 3 -->
+        <button class="calculator-btn number-btn" data-number="4">4</button>
+        <button class="calculator-btn number-btn" data-number="5">5</button>
+        <button class="calculator-btn number-btn" data-number="6">6</button>
+        <button class="calculator-btn operation-btn" data-operation="minus">
+          −
+        </button>
+
+        <!-- Row 4 -->
+        <button class="calculator-btn number-btn" data-number="1">1</button>
+        <button class="calculator-btn number-btn" data-number="2">2</button>
+        <button class="calculator-btn number-btn" data-number="3">3</button>
+        <button class="calculator-btn operation-btn" data-operation="plus">
+          +
+        </button>
+
+        <!-- Row 5 -->
+        <button class="calculator-btn number-btn col-span-2" data-number="0">
+          0
+        </button>
+        <button id="decimal" class="calculator-btn number-btn">.</button>
+        <button id="equals" class="calculator-btn equals-btn">=</button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

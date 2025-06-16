@@ -1,0 +1,52 @@
+h1 {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding-top: 24px;
+}
+
+h2 {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #555;
+  padding: 8px;
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 1.2em;
+  font-weight: normal;
+}
+
+.container {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  width: 200px;
+  height: 500px;
+  border: 10px solid #333;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+}
+
+.square {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: slideDownUp 4s infinite;
+}
+
+@keyframes slideDownUp {
+  0% {
+    top: 0;
+    background-color: #f8ff6b;
+  }
+  50% {
+    top: 300px;
+    background-color: #ff6b6b;
+  }
+  100% {
+    background-color: #7a6bff;
+  }
+}

@@ -1,0 +1,95 @@
+/* General styles for the page */
+
+* {
+  box-sizing: border-box;
+  color: #e6e8ff;
+  background-color: #18181a;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Title of the exercise + Artist name */
+h1 {
+  font-family: Arial, sans-serif;
+  background-color: rgb(44, 26, 75);
+  padding: 8px;
+  font-size: 2.5em;
+}
+
+/* Description of the exercise */
+h2 {
+  font-family: Arial, sans-serif;
+  background-color: rgb(109, 109, 110);
+  padding: 8px;
+  font-size: 1.5em;
+  font-weight: normal;
+  text-align: center;
+  margin: 0 auto;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Exercise 1 & 2: Render data dynamically */
+
+.card {
+  border: 4px solid #e6e8ff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.card-title {
+  font-size: 2em;
+  padding: 0 0 10px 0;
+}
+
+.card-text {
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+#card-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+/* Exercise 3: Artist Portfolio */
+
+.artist-card {
+  margin-bottom: 2rem;
+}
+
+/* Artist Name - e.g Van Gogh */
+.artist-name {
+  background-color: rgb(112, 60, 196);
+  font-size: 2em;
+}
+
+.artwork-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.artwork-card {
+  margin-top: 0.5rem;
+}
+
+.artwork-image {
+  width: 400px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5rem;
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
