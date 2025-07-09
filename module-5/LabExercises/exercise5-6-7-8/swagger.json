@@ -1,0 +1,136 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "My Calculator Project",
+    "description": "My User Project Application API",
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  },
+  "host": "localhost:3000",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "Calculator",
+      "description": "API for Calculus in the system"
+    }
+  ],
+  "schemes": ["http"],
+  "consumes": ["application/json"],
+  "produces": ["application/json"],
+  "paths": {
+    "/calculator/add": {
+      "get": {
+        "tags": ["Calculator"],
+        "summary": "Add 2 numbers",
+        "parameters": [
+          {
+            "name": "num1",
+            "in": "query",
+            "required": true,
+            "type": "number",
+            "description": "The First Number"
+          },
+          {
+            "name": "num2",
+            "in": "query",
+            "required": true,
+            "type": "number",
+            "description": "The Second Number"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully returns the sum of the two numbers"
+          }
+        }
+      }
+    },
+    "/calculator/subtract": {
+      "get": {
+        "tags": ["Calculator"],
+        "summary": "Subtract 2 numbers",
+        "parameters": [
+          {
+            "name": "num1",
+            "in": "query",
+            "required": true,
+            "type": "number",
+            "description": "The First Number"
+          },
+          {
+            "name": "num2",
+            "in": "query",
+            "required": true,
+            "type": "number",
+            "description": "The Second Number"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully returns the result of subtraction"
+          }
+        }
+      }
+    },
+    "/calculator/multiply": {
+      "get": {
+        "tags": ["Calculator"],
+        "summary": "Multiply 2 numbers",
+        "parameters": [
+          {
+            "name": "num1",
+            "in": "query",
+            "required": true,
+            "type": "number",
+            "description": "The First Number"
+          },
+          {
+            "name": "num2",
+            "in": "query",
+            "required": true,
+            "type": "number",
+            "description": "The Second Number"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully returns the product of the two numbers"
+          }
+        }
+      }
+    },
+    "/calculator/divide": {
+      "get": {
+        "tags": ["Calculator"],
+        "summary": "Divide 2 numbers",
+        "parameters": [
+          {
+            "name": "num1",
+            "in": "query",
+            "required": true,
+            "type": "number",
+            "description": "The numerator"
+          },
+          {
+            "name": "num2",
+            "in": "query",
+            "required": true,
+            "type": "number",
+            "description": "The denominator"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully returns the quotient"
+          },
+          "400": {
+            "description": "Cannot divide by zero"
+          }
+        }
+      }
+    }
+  }
+}

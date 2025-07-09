@@ -1,0 +1,19 @@
+{
+  "name": "exercise3",
+  "version": "1.0.0",
+  "description": "Lab Exercise 3",
+  "license": "ISC",
+  "author": "Valerie Tham",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "jest": "^30.0.4",
+    "supertest": "^7.1.3",
+    "swagger-ui-express": "^5.0.1"
+  }
+}

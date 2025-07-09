@@ -1,0 +1,16 @@
+{
+  "name": "exercise8-fake-store",
+  "version": "1.0.0",
+  "description": "Lab Exercise 8 Part II",
+  "license": "ISC",
+  "author": "Valerie Tham",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

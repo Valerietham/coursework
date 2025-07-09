@@ -1,0 +1,64 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex items-center justify-center min-h-screen max-w-5xl">
+    <div>
+      <div class="calculator-display-container p-8 border-slate-50 border-2">
+        <div class="text-5xl" id="display" class="calculator-display">0</div>
+      </div>
+
+      <label class="text-xl font-semibold"
+        >First Number: <input class="bg-blue-50" id="num1" type="number"
+      /></label>
+      <label class="text-xl font-semibold"
+        >Second Number
+        <input class="bg-blue-50" id="num2" type="number" /></label
+      ><br /><br />
+
+      <div>
+        <button
+          onclick="getResult('add')"
+          class="inline-block px-4 py-2 bg-blue-500 text-white rounded"
+        >
+          Add
+        </button>
+        <button
+          onclick="getResult('subtract')"
+          class="inline-block px-4 py-2 bg-blue-500 text-white rounded"
+        >
+          Subtract
+        </button>
+        <button
+          onclick="getResult('multiply')"
+          class="inline-block px-4 py-2 bg-blue-500 text-white rounded"
+        >
+          Multiply
+        </button>
+        <button
+          onclick="getResult('divide')"
+          class="inline-block px-4 py-2 bg-blue-500 text-white rounded"
+        >
+          Divide
+        </button>
+      </div>
+      <br />
+    </div>
+  </body>
+
+  <script>
+    function getResult(operationRoute) {
+      let num1 = document.getElementById('num1').value;
+      let num2 = document.getElementById('num2').value;
+
+      fetch(`/calculator/${operationRoute}?num1=${num1}&num2=${num2}`)
+        .then((response) => response.json())
+        .then((data) => {
+          document.getElementById('display').innerHTML = data.result;
+        });
+    }
+  </script>
+</html>
