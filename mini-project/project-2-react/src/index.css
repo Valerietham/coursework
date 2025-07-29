@@ -1,0 +1,91 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+/* Design System CSS Variables */
+:root {
+  /* Background colors */
+  --background: #fafaf9;
+  --foreground: #1c1917;
+  
+  /* Primary colors */
+  --primary: #57534e;
+  --primary-foreground: #fafaf9;
+  
+  /* Secondary colors */
+  --secondary: #f5f5f4;
+  --secondary-foreground: #1c1917;
+  
+  /* Accent colors */
+  --accent: #fef9c3;
+  --accent-foreground: #713f12;
+  
+  /* Muted colors */
+  --muted: #f5f5f4;
+  --muted-foreground: #78716c;
+  
+  /* Border colors */
+  --border: #e7e5e4;
+  --input: #e7e5e4;
+  --ring: #57534e;
+  
+  /* Destructive colors */
+  --destructive: #ef4444;
+  --destructive-foreground: #fef2f2;
+  
+  /* Card colors */
+  --card: #fafaf9;
+  --card-foreground: #1c1917;
+  
+  /* Popover colors */
+  --popover: #fafaf9;
+  --popover-foreground: #1c1917;
+  
+  /* Shadow */
+  --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-md: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+/* Dark mode variables */
+.dark {
+  /* Background colors */
+  --background: #1c1917;
+  --foreground: #fafaf9;
+  
+  /* Primary colors */
+  --primary: #a8a29e;
+  --primary-foreground: #1c1917;
+  
+  /* Secondary colors */
+  --secondary: #292524;
+  --secondary-foreground: #fafaf9;
+  
+  /* Accent colors */
+  --accent: #713f12;
+  --accent-foreground: #fefce8;
+  
+  /* Muted colors */
+  --muted: #292524;
+  --muted-foreground: #a8a29e;
+  
+  /* Border colors */
+  --border: #292524;
+  --input: #292524;
+  --ring: #a8a29e;
+  
+  /* Destructive colors */
+  --destructive: #f87171;
+  --destructive-foreground: #1c1917;
+  
+  /* Card colors */
+  --card: #1c1917;
+  --card-foreground: #fafaf9;
+  
+  /* Popover colors */
+  --popover: #1c1917;
+  --popover-foreground: #fafaf9;
+}
