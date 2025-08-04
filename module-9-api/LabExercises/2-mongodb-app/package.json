@@ -1,0 +1,18 @@
+{
+  "name": "2-mongodb-app",
+  "version": "1.0.0",
+  "description": "Lab Exercise 2",
+  "license": "ISC",
+  "author": "Valerie Tham",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.16.4"
+  }
+}
