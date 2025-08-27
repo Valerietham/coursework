@@ -1,3 +1,5 @@
+<img width="899" height="528" alt="Furever homepage" src="https://github.com/user-attachments/assets/8fdccab9-c4ca-4184-9edb-9816ce02e06d" />
+
 # Furever: Swipe Fur Love
 
 **Furever: Swipe fur love** is Singapore’s swipe-based cat adoption platform, designed to help potential adopters find their purrfect match and cats to find their furever homes. Fosterers list cats for adoption, while adopters browse, swipe, and connect with cats they love.
@@ -6,9 +8,7 @@ Once matched, users can chat directly to arrange in-person viewings. For those n
 
 Furever makes it easier and enjoyable than ever to meet, adopt, and support Singapore’s cats in need.
 
-Project Documentation: https://docs.google.com/document/d/1hNWvfZXoDIQ5BqrVh8QdW_ic7wWi1IKP/edit?usp=sharing&ouid=107667235089554625827&rtpof=true&sd=true
-
-Project Presentation: https://www.canva.com/design/DAGwsxTL4_s/a38EheHo5y6AnZTfY5H3Ng/view?utm_content=DAGwsxTL4_s&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h48a8e56d21
+<img width="899" height="528" alt="Furever Likes Page" src="https://github.com/user-attachments/assets/aee57913-de68-45a0-bea7-d727dadaef41" />
 
 ## Project Overview
 
@@ -42,7 +42,7 @@ capstone/
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/Valerietham/coursework/edit/master/capstone/
 cd capstone
 ```
 
@@ -261,5 +261,11 @@ Edit `backend/config/config.json` for database settings with the your username a
 1. Create Auth0 application (Type: Single Page Application)
 2. Configure callback URLs
 3. Set up JWT audience and issuer
+
+## Resources
+
+Project Documentation: https://docs.google.com/document/d/1hNWvfZXoDIQ5BqrVh8QdW_ic7wWi1IKP/edit?usp=sharing&ouid=107667235089554625827&rtpof=true&sd=true
+
+Project Presentation: https://www.canva.com/design/DAGwsxTL4_s/a38EheHo5y6AnZTfY5H3Ng/view?utm_content=DAGwsxTL4_s&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h48a8e56d21
 
 **Thank you for reading! 🐾**
